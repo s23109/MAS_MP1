@@ -6,6 +6,7 @@ import Atrybut_Złożony.*;
 import Ekstensja.*;
 import Ekstensja_Trwała.*;
 import Metoda_Klasowa.*;
+import Przeciążenie.ShopItem;
 import Przesłonięcie.*;
 
 public class Main {
@@ -117,7 +118,7 @@ public class Main {
         }
 
         //Przesłonięcie
-        if (true){
+        if (false){
             System.out.println("Przesłonięcie");
             Pojazd pojazd = new Pojazd("a");
             Samochód samochód = new Samochód("b",2137);
@@ -128,8 +129,15 @@ public class Main {
             samolot.getSth();
 
         }
-        //Przeciążenie
 
-        // System.out.println("");
+        //Przeciążenie
+        if (false){
+            System.out.println("Przeciążenie");
+            ShopItem shopItem = new ShopItem(100.0);
+            System.out.println(shopItem.getPrice());
+            System.out.println(shopItem.getPrice(0.25));
+            System.out.println(shopItem.getPrice(0.25,0.25,0.25));
+        }
+
     }
 }
