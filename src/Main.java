@@ -6,6 +6,8 @@ import Atrybut_Złożony.*;
 import Ekstensja.*;
 import Ekstensja_Trwała.*;
 import Metoda_Klasowa.*;
+import Przesłonięcie.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -104,7 +106,7 @@ public class Main {
         }
 
         //Metoda Klasowa
-        if (true){
+        if (false){
             System.out.println("Metoda Klasowa");
             Books books = new Books();
             books.addBook(new Book("aaa",12));
@@ -113,6 +115,20 @@ public class Main {
             System.out.println("Average num of pages: " + books.getAveragePageNo());
 
         }
+
+        //Przesłonięcie
+        if (true){
+            System.out.println("Przesłonięcie");
+            Pojazd pojazd = new Pojazd("a");
+            Samochód samochód = new Samochód("b",2137);
+            Samolot samolot = new Samolot("c");
+
+            pojazd.getSth();
+            samochód.getSth();
+            samolot.getSth();
+
+        }
+        //Przeciążenie
 
         // System.out.println("");
     }
