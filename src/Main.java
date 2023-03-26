@@ -1,3 +1,5 @@
+import Atrybut_Złożony.Atr_zł;
+import Atrybut_Złożony.Główna;
 import Ekstensja.*;
 import Ekstensja_Trwała.*;
 
@@ -37,5 +39,20 @@ public class Main {
             cars.showCar();
         }
 
+        //Atrybut złożony
+        if (false){
+            System.out.println("Atrybut złożony");
+            Atr_zł shared = new Atr_zł("shared" , 12);
+            Atr_zł exclusive = new Atr_zł("exclusive", 34);
+
+            Główna g1 = new Główna("AAA", shared);
+            Główna g2 = new Główna("BBB", shared);
+            Główna g3 = new Główna("CCC", exclusive);
+
+            System.out.println(g1);
+            System.out.println(g2);
+            System.out.println(g3);
+
+        }
     }
 }
