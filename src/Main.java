@@ -1,4 +1,5 @@
 import Atrybut_Opcjonalny.Plane;
+import Atrybut_Powtarzalny.Teacher;
 import Atrybut_Złożony.Atr_zł;
 import Atrybut_Złożony.Główna;
 import Ekstensja.*;
@@ -57,7 +58,7 @@ public class Main {
         }
 
         //Atrybut opcjonalny
-        if (true){
+        if (false){
             System.out.println("Atrybut opcjonalny");
             Plane p1 = new Plane("AAA", "BBB");
             Plane p2 = new Plane("CCC");
@@ -66,5 +67,18 @@ public class Main {
             System.out.println(p2);
 
         }
+
+        //Atrybut Powtarzalny
+        if (false){
+            System.out.println("Atrybut Powtarzalny");
+            Teacher teacher = new Teacher("AAA",123);
+            teacher.addClass("class1", "class2", "class3");
+            teacher.showDetails();
+            teacher.clearClass();
+            teacher.showDetails();
+
+        }
+
+        // System.out.println(" ");
     }
 }
