@@ -18,7 +18,7 @@ public class Students {
         System.out.println("Current Objects of " + Student.class.getName() + " :");
         if (extent.size() != 0) {
             for (Student student : extent) {
-                System.out.println(student);
+                System.out.println(student + " MEM: " + Integer.toHexString(System.identityHashCode(student)));
             }
         }
         else {

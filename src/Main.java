@@ -1,4 +1,5 @@
 import Ekstensja.*;
+import Ekstensja_Trwała.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +20,22 @@ public class Main {
             students.showStudents();
         }
 
-        
+        //Ekstensja - trwałość
+        if (false) {
+            System.out.println("Ekstensja - trwałość");
+            String path_to_file = System.getProperty("user.dir") + "\\src\\Ekstensja_Trwała\\extent.bin";
+            System.out.println("file loc = " + path_to_file);
+            Cars cars = new Cars(path_to_file);
+            cars.addCar(new Car("Mitsubishi", 6500));
+            cars.addCar(new Car("Ferrari", 125000));
+            cars.addCar(new Car("Subaru", 50000));
+            cars.showCar();
+
+            cars.dumpToFile();
+
+            cars.readFromFile();
+            cars.showCar();
+        }
 
     }
 }
