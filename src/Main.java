@@ -1,5 +1,7 @@
 import Atrybut_Klasowy.Osoba;
 import Atrybut_Opcjonalny.Plane;
+import Atrybut_Pochodny.Koszyk;
+import Atrybut_Pochodny.Przedmiot;
 import Atrybut_Powtarzalny.Teacher;
 import Atrybut_Złożony.Atr_zł;
 import Atrybut_Złożony.Główna;
@@ -92,7 +94,17 @@ public class Main {
 
         }
 
-        
+        //Atrybut pochodny
+        if (false){
+            System.out.println("Atrybut pochodny");
+            Koszyk koszyk = new Koszyk();
+            koszyk.addToKoszyk(new Przedmiot("ABC",12));
+            koszyk.addToKoszyk(new Przedmiot("CCC",333));
+            koszyk.addToKoszyk(new Przedmiot("ASDASD",1));
+            koszyk.seeKoszykDetails();
+
+        }
+
         // System.out.println("");
     }
 }
