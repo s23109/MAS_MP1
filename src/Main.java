@@ -1,13 +1,11 @@
-import Atrybut_Klasowy.Osoba;
-import Atrybut_Opcjonalny.Plane;
-import Atrybut_Pochodny.Koszyk;
-import Atrybut_Pochodny.Przedmiot;
-import Atrybut_Powtarzalny.Teacher;
-import Atrybut_Złożony.Atr_zł;
-import Atrybut_Złożony.Główna;
+import Atrybut_Klasowy.*;
+import Atrybut_Opcjonalny.*;
+import Atrybut_Pochodny.*;
+import Atrybut_Powtarzalny.*;
+import Atrybut_Złożony.*;
 import Ekstensja.*;
 import Ekstensja_Trwała.*;
-
+import Metoda_Klasowa.*;
 public class Main {
     public static void main(String[] args) {
 
@@ -102,6 +100,17 @@ public class Main {
             koszyk.addToKoszyk(new Przedmiot("CCC",333));
             koszyk.addToKoszyk(new Przedmiot("ASDASD",1));
             koszyk.seeKoszykDetails();
+
+        }
+
+        //Metoda Klasowa
+        if (true){
+            System.out.println("Metoda Klasowa");
+            Books books = new Books();
+            books.addBook(new Book("aaa",12));
+            books.addBook(new Book("aaa",11));
+            books.addBook(new Book("aaa",13));
+            System.out.println("Average num of pages: " + books.getAveragePageNo());
 
         }
 
