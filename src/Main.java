@@ -1,3 +1,4 @@
+import Atrybut_Klasowy.Osoba;
 import Atrybut_Opcjonalny.Plane;
 import Atrybut_Powtarzalny.Teacher;
 import Atrybut_Złożony.Atr_zł;
@@ -79,6 +80,19 @@ public class Main {
 
         }
 
-        // System.out.println(" ");
+        //Atrybut klasowy
+        if (false){
+            System.out.println("Atrybut klasowy");
+            Osoba o1 = new Osoba("AAA",123);
+            Osoba o2 = new Osoba("BBB",221);
+            o1.showExtend();
+
+            o1.showDetails();
+            o2.showDetails();
+
+        }
+
+        
+        // System.out.println("");
     }
 }
