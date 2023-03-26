@@ -1,3 +1,4 @@
+import Atrybut_Opcjonalny.Plane;
 import Atrybut_Złożony.Atr_zł;
 import Atrybut_Złożony.Główna;
 import Ekstensja.*;
@@ -52,6 +53,17 @@ public class Main {
             System.out.println(g1);
             System.out.println(g2);
             System.out.println(g3);
+
+        }
+
+        //Atrybut opcjonalny
+        if (true){
+            System.out.println("Atrybut opcjonalny");
+            Plane p1 = new Plane("AAA", "BBB");
+            Plane p2 = new Plane("CCC");
+
+            System.out.println(p1);
+            System.out.println(p2);
 
         }
     }
