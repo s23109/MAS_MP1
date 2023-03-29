@@ -19,7 +19,7 @@ public class Koszyk {
     }
 
     public void removeFromKoszyk (Przedmiot przedmiot){
-        przedmiotList.removeIf( p -> p.nazwa == przedmiot.nazwa);
+        przedmiotList.remove(przedmiot);
     }
 
     //Atrybut Pochodny

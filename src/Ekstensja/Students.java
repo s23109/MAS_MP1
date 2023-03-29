@@ -11,7 +11,7 @@ public class Students {
     }
 
     public void removeStudent (Student student){
-        extent.removeIf( s -> s.name== student.name && s.indexNo == student.indexNo );
+        extent.remove(student);
     }
 
     public void showStudents (){

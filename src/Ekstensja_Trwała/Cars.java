@@ -20,7 +20,7 @@ public class Cars {
     }
 
     public void removeCar (Car car){
-        extent.removeIf( c -> c.name == car.name && c.price == car.price);
+        extent.remove(car);
     }
 
     public void showCar (){

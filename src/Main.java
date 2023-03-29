@@ -16,12 +16,15 @@ public class Main {
         if (false){
             System.out.println("Ekstensja");
             Students students = new Students();
-            students.addStudent(new Student("Adam Małysz" , "s22222"));
-            students.addStudent(new Student("Mariusz Pudzianowski" , "s23131"));
-            students.addStudent(new Student("Test Testowy" , "s1100"));
+            Student s1 = new Student("Adam Małysz" , "s22222");
+            Student s2 = new Student("Mariusz Pudzianowski" , "s23131");
+            Student s3 = new Student("Test Testowy" , "s1100");
+            students.addStudent(s1);
+            students.addStudent(s2);
+            students.addStudent(s3);
             students.showStudents();
 
-            students.removeStudent(new Student("Test Testowy" , "s1100"));
+            students.removeStudent(s3);
             students.showStudents();
 
             students.clearStudents();
@@ -34,9 +37,12 @@ public class Main {
             String path_to_file = System.getProperty("user.dir") + "\\src\\Ekstensja_Trwała\\extent.bin";
             System.out.println("file loc = " + path_to_file);
             Cars cars = new Cars(path_to_file);
-            cars.addCar(new Car("Mitsubishi", 6500));
-            cars.addCar(new Car("Ferrari", 125000));
-            cars.addCar(new Car("Subaru", 50000));
+            Car c1 = new Car("Mitsubishi", 6500);
+            Car c2 = new Car("Ferrari", 125000);
+            Car c3 = new Car("Subaru", 50000);
+            cars.addCar(c1);
+            cars.addCar(c2);
+            cars.addCar(c3);
             cars.showCar();
 
             cars.dumpToFile();
@@ -99,9 +105,12 @@ public class Main {
         if (false){
             System.out.println("Atrybut pochodny");
             Koszyk koszyk = new Koszyk();
-            koszyk.addToKoszyk(new Przedmiot("ABC",12));
-            koszyk.addToKoszyk(new Przedmiot("CCC",333));
-            koszyk.addToKoszyk(new Przedmiot("ASDASD",1));
+            Przedmiot p1 = new Przedmiot("ABC",12);
+            Przedmiot p2 = new Przedmiot("CCC",333);
+            Przedmiot p3 = new Przedmiot("ASDASD",1);
+            koszyk.addToKoszyk(p1);
+            koszyk.addToKoszyk(p2);
+            koszyk.addToKoszyk(p3);
             koszyk.seeKoszykDetails();
 
         }
@@ -110,9 +119,12 @@ public class Main {
         if (false){
             System.out.println("Metoda Klasowa");
             Books books = new Books();
-            books.addBook(new Book("aaa",12));
-            books.addBook(new Book("aaa",11));
-            books.addBook(new Book("aaa",13));
+            Book b1 = new Book("aaa",12);
+            Book b2 = new Book("aaa",11);
+            Book b3 = new Book("aaa",13);
+            books.addBook(b1);
+            books.addBook(b2);
+            books.addBook(b3);
             System.out.println("Average num of pages: " + books.getAveragePageNo());
 
         }

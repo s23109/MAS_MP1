@@ -16,7 +16,7 @@ public class Books {
     }
 
     public void removeBook(Book book){
-        bookList.removeIf(b -> b.name == book.name);
+        bookList.remove(book);
     }
 
     public double getAveragePageNo(){
