@@ -52,19 +52,19 @@ public class Main {
         }
 
         //Atrybut złożony
-        if (false){
+        if (true){
             System.out.println("Atrybut złożony");
-            Atr_zł shared = new Atr_zł("shared" , 12);
-            Atr_zł exclusive = new Atr_zł("exclusive", 34);
+            Driver_Info shared = new Driver_Info("Adam" , 12);
+            Driver_Info exclusive = new Driver_Info("Mariusz", 34);
 
-            Główna g1 = new Główna("AAA", shared);
-            Główna g2 = new Główna("BBB", shared);
-            Główna g3 = new Główna("CCC", exclusive);
+            Truck g1 = new Truck("Scania", shared);
+            Truck g2 = new Truck("Iveco", shared);
+            Truck g3 = new Truck("Volvo", exclusive);
 
             System.out.println(g1);
             System.out.println(g2);
             System.out.println(g3);
-
+            g3.printDriverAge();
         }
 
         //Atrybut opcjonalny
@@ -116,16 +116,14 @@ public class Main {
         }
 
         //Metoda Klasowa
-        if (false){
+        if (true){
             System.out.println("Metoda Klasowa");
-            Books books = new Books();
+
             Book b1 = new Book("aaa",12);
             Book b2 = new Book("aaa",11);
             Book b3 = new Book("aaa",13);
-            books.addBook(b1);
-            books.addBook(b2);
-            books.addBook(b3);
-            System.out.println("Average num of pages: " + books.getAveragePageNo());
+
+            System.out.println("Total num of pages of all books: " + b1.getAllBooksTotalPageNo());
 
         }
 
